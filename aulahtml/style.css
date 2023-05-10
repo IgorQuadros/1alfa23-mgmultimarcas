@@ -195,3 +195,31 @@ footer .social{
   height: 450px; 
   margin: 10px;
 }
+
+.div-50 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.div-50.faleconosco{
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.faleconosco input{
+    background: #d2d2d2;
+    width: 250;
+    padding: 10px 2px;
+}
+
+input[type=radio]{
+    width: 25px;
+    float: left;
+    margin: 5px 0;
+}
+
+.faleconosco ul li{
+    display: inline-block;
+}
