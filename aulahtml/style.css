@@ -208,7 +208,13 @@ footer .social{
     text-transform: uppercase;
 }
 
-.faleconosco input{
+.content{
+    font-size: 20px;
+    line-height: 25px;
+    padding: 50pxs;
+}
+
+.faleconosco input, .faleconosco select, .faleconosco textarea{
     background: #d2d2d2;
     width: 250;
     padding: 10px 2px;
@@ -222,4 +228,38 @@ input[type=radio]{
 
 .faleconosco ul li{
     display: inline-block;
+    background-color: #d2d2d2;
+    padding: 10px;
+}
+
+.campo{
+    margin: 10px 0;
+}
+
+.faleconosco textarea{
+    width: 500px;
+}
+
+.sobre p{
+    text-align: justify;
+    width: 95%;
+    font-size: 30px;
+}
+
+.sobre h3{
+    font-size: 30px;
+}
+
+.clear{
+    clear: both;
+}
+
+/*SCREEN 480PX*/
+@media (max-width: 480px){
+    body{
+        background-color: #000;
+    }
+    .contato{
+        display: none!important;
+    }
 }
