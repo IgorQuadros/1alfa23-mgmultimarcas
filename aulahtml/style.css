@@ -254,12 +254,81 @@ input[type=radio]{
     clear: both;
 }
 
+
+.dropdown{
+    display: none;
+}
+
 /*SCREEN 480PX*/
-@media (max-width: 480px){
-    body{
-        background-color: #000;
+@media(max-width: 1200px){
+    
+    .dropdown{
+        display: block;
+        text-align: center;
+        background: #ffda1f;
     }
-    .contato{
-        display: none!important;
+    .dropdown a{
+        color: #000;
+        line-height: 30px;
+    }
+    .dropdown img{
+        margin-top: 20px;
+    }
+    .dropdown i{
+        font-size: 35px;
+    }
+    .contato,#header {
+    display: none!important;
+    }
+    .none,nav.menu,#logotipo{
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    #header{
+        padding: 20px;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .marcas ul li{
+        width: 25%;
+    }
+    div.item {
+        display: inline-block;
+        width: 87%;
+    }
+    .botao a{
+        font-size: 14px;
+    }
+    .depoimentos .item{
+        width: 60%;
+        max-width: 280px;
+    }
+
+
+}
+
+
+@media (max-width: 767px ) and (min-width: 481px){
+    .marcas ul li{
+        width: 30%;
+    } 
+    .item{
+        width: 30px;
+    }
+    footer .item{
+        width: 60%;
+    }
+}
+
+
+@media(max-width: 480px){
+    .content{
+        width: calc(100% - 40px);
     }
 }
