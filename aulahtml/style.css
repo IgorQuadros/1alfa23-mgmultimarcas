@@ -16,7 +16,7 @@ section{
 }
 
 nav.menu{
-    background-color: #ffda1f;
+    background-color: chartreuse;
     text-align: center;
 } 
 
@@ -84,7 +84,7 @@ img{
 
 .sublinhado{
     width: 150px;
-    background: #ffda1f;
+    background-color: chartreuse;
     height: 10px;
     margin: 0 auto;
     margin-top: 10px;
@@ -134,7 +134,7 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #ffda1f;
+  background-color: chartreuse;
 }
 
 footer .social{
@@ -260,63 +260,66 @@ input[type=radio]{
 }
 
 /*SCREEN 480PX*/
-@media(max-width: 1200px){
-    
-    .dropdown{
+@media(max-width: 1300px){
+
+    .dropdown {
         display: block;
         text-align: center;
-        background: #ffda1f;
+        background-color: chartreuse;
     }
-    .dropdown a{
+    .dropdown a {
         color: #000;
         line-height: 30px;
     }
-    .dropdown img{
+    .dropdown img {
         margin-top: 20px;
     }
-    .dropdown i{
+    .dropdown i {
         font-size: 35px;
     }
-    .contato,#header {
-    display: none!important;
+    .contato,
+    #header {
+        display: none !important;
     }
-    .none,nav.menu,#logotipo{
+    .none,
+    nav.menu,
+    #logotipo {
         display: none;
     }
     section {
         width: 100%;
     }
-    #header{
+    #header {
         padding: 20px;
     }
-    .dropdown-content{
+    .dropdown-content {
         display: none;
     }
-    .dropdown:hover .dropdown-content{
+    .dropdown:hover .dropdown-content {
         display: block;
     }
-    .marcas ul li{
+    .marcas ul li {
         width: 25%;
     }
     div.item {
         display: inline-block;
         width: 87%;
     }
-    .botao a{
+    .botao a {
         font-size: 14px;
-    }
-    .depoimentos .item{
-        width: 60%;
-        max-width: 280px;
-    }
-
+    }    
+    
 
 }
 
 
 @media (max-width: 767px ) and (min-width: 481px){
+    .marcas{
+        text-align: center;
+    }
     .marcas ul li{
         width: 30%;
+        text-align: center;
     } 
     .item{
         width: 30px;
@@ -324,11 +327,49 @@ input[type=radio]{
     footer .item{
         width: 60%;
     }
+    section{
+        width: calc(100%);
+    }
+    header section{
+        width: 100%;
+    }
+    .div-50.faleconosco{
+        width: 100%;
+    }
+    .faleconosco textarea{
+        width: 100%;
+        max-width: 500px;
+    }
+    .faleconosco{
+        text-align: center;
+    }
+    .iframe{
+        width: 100%;
+        max-width: 600px;
+    }
 }
 
 
 @media(max-width: 480px){
     .content{
         width: calc(100% - 40px);
+        padding: 10px 0;
+    }
+    .sobre h3{
+        text-align: center;
+    }
+    .div-50 {
+        width: 100%;
+    }
+    .faleconosco textarea{
+        width: 100%;
+        max-width: 500px;
+    }
+    .faleconosco{
+        text-align: center;
+    }
+    .iframe{
+        width: 100%;
+        max-width: 600px;
     }
 }
